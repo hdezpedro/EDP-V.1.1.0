@@ -1,5 +1,6 @@
 package com.example.edpv110;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -80,13 +81,17 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_login) {
+        if (id == R.id.nav_contacto) {
             // Handle the camera action
         } else if (id == R.id.nav_agregar) {
 
         } else if (id == R.id.nav_desaparecidas) {
+            Intent intent = new Intent(getApplicationContext(), desaparecidos.class);
+            startActivity(intent);
 
-        } else if (id == R.id.nav_contacto) {
+        } else if (id == R.id.nav_login) {
+            Intent intent = new Intent(getApplicationContext(), Login.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_share) {
 
