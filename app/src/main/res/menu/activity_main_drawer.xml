@@ -5,33 +5,33 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_login"
+            android:icon="@android:drawable/ic_lock_idle_lock"
+            android:title="Inicio sesion" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_desaparecidas"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="Desaparecidas " />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_agregar"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="Reportar  Nueva Persona" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_contacto"
+            android:icon="@android:drawable/stat_sys_phone_call"
+            android:title="Contactos" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
+                android:id="@+id/nav_informacion"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="Informacion" />
+            <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
         </menu>
     </item>
 
