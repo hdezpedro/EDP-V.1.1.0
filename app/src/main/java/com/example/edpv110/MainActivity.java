@@ -84,6 +84,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_contacto) {
             // Handle the camera action
         } else if (id == R.id.nav_agregar) {
+            Intent intent = new Intent(getApplicationContext(), reposrtenuevo.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_desaparecidas) {
             Intent intent = new Intent(getApplicationContext(), desaparecidos.class);
