@@ -7,302 +7,225 @@
     tools:context=".reposrtenuevo">
 
     <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="531dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.69">
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        tools:context=".ActivityInsert">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/tv_activity_title_ai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:text="Persona desaparecida"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/tv_nombre"
-                android:layout_width="wrap_content"
-                android:layout_height="32dp"
-                android:text="        Nombre:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
 
-            <EditText
-                android:id="@+id/et_nombre"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginTop="16dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Nombre"
-                app:layout_constraintTop_toBottomOf="@+id/tv_nombre"
-                tools:layout_editor_absoluteX="144dp" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:id="@+id/tv_apellido_paterno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apellido paterno"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_apellido_paterno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:id="@+id/tv_apellido_materno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apellido paterno"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_apellido_materno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@android:color/background_dark" />
+
+
+                <TextView
+                    android:id="@+id/tv_edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edad"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:textColor="@android:color/background_dark" />
+
+
+                <TextView
+                    android:id="@+id/tv_sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@android:color/background_dark" />
+
+
+                <TextView
+                    android:id="@+id/tv_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de desaparicion"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:id="@+id/tv_colonia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Colonia"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_colonia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:id="@+id/tv_cuidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cuidad"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_cuidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@android:color/background_dark" />
+
+
+                <TextView
+                    android:id="@+id/tv_cp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Codigo postal"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_cp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/background_dark" />
+
+
+                <TextView
+                    android:id="@+id/tv_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telefono"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/background_dark" />
+
+                <TextView
+                    android:id="@+id/tv_imagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_imagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/tv_caracteristica"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Caracteristicas"
+                    android:textColor="@android:color/background_dark" />
+
+                <EditText
+                    android:id="@+id/et_caracteristicas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@android:color/background_dark" />
+            </LinearLayout>
+
+        </ScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tv_apellido_p"
-                android:layout_width="wrap_content"
-                android:layout_height="32dp"
-                android:text="       Apellido Paterno:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
-
-            <EditText
-                android:id="@+id/et_apellidop"
-                android:layout_width="162dp"
-                android:layout_height="43dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Apellido P"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_apellidom" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_apellidom"
-                android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/btn_editar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="       Apellido Materno:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
+                android:layout_weight="0.5"
+                android:onClick="btn_insertOnClick"
+                android:text="insertar" />
 
-            <EditText
-                android:id="@+id/et_apellidom"
-                android:layout_width="177dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Apellido M"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/et_apellidop" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_edad"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="       Edad:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
-
-            <EditText
-                android:id="@+id/et_edad"
-                android:layout_width="104dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_sexo"
-                android:layout_width="113dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="       Sexo:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
-
-            <RadioButton
-                android:id="@+id/rb_masculino"
-                android:layout_width="56dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="M" />
-
-            <RadioButton
-                android:id="@+id/rb_femenino"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="F" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_fecha"
-                android:layout_width="209dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:autoText="false"
-                android:text="       Fecha de   desaparecido"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
-
-            <EditText
-                android:id="@+id/et_fecha"
-                android:layout_width="232dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="date" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_colonia"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="       Colonia:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
-
-            <EditText
-                android:id="@+id/et_colonia"
-                android:layout_width="104dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="text" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="384dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_cuidad"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="       Cuidad:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
-
-            <EditText
-                android:id="@+id/et_ciudad"
-                android:layout_width="104dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="text" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="383dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_cp"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="       Codigo Postal:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
-
-            <EditText
-                android:id="@+id/et_cp"
-                android:layout_width="104dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_telefono"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="       Telefono:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
-
-            <EditText
-                android:id="@+id/et_telefono"
-                android:layout_width="104dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="number" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_caracteristicas"
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="       Caracteristicas:"
-                android:textColor="@color/colorAccent"
-                tools:layout_editor_absoluteX="165dp"
-                tools:layout_editor_absoluteY="76dp" />
-
-            <EditText
-                android:id="@+id/et_caracteristicas"
-                android:layout_width="104dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:inputType="text|number" />
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
