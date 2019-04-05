@@ -6,4 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".desaparecidos">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lista de personas"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".95">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/lv_depersonas_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"
+                    android:layout_weight=".8"></ListView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

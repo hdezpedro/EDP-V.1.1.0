@@ -16,10 +16,6 @@
             android:id="@+id/nav_agregar"
             android:icon="@android:drawable/ic_menu_add"
             android:title="Reportar  Nueva Persona" />
-        <item
-            android:id="@+id/nav_contacto"
-            android:icon="@android:drawable/stat_sys_phone_call"
-            android:title="Contactos" />
     </group>
 
     <item android:title="Communicate">
